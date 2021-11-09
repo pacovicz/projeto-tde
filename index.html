@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./js/script.js" defer async></script>
+  <title>Plataforma</title>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="hero">
+      <h1 class="main-heading">Aprenda a codar olhando outros.</h1>
+      <p class="paragraph">Veja como desenvolvedores experientes resolvem problemas
+        em tempo real. Assistir tutoriais é legal, mas entender como desenvolvedores pensam não tem preço.</p>
+    </div>
+
+    <div class="cta">
+      <div class="feature"><span>Tente de graça por 7 dias</span> depois R$20/mes.
+      </div>
+      <form class="form" onsubmit="cadastrar(event, this)">
+        <div class="input-wrapper">
+          <input type="text" name="first-name" id="first-name" placeholder="Nome" class="form__first-name">
+        </div>
+        <div class="input-wrapper">
+          <input type="text" name="last-name" id="last-name" placeholder="Sobrenome" class="form__last-name">
+        </div>
+        <div class="input-wrapper">
+          <input type="email" name="email" id="email" placeholder="Email" class="form__email">
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" name="cellphone" id="cellphone" placeholder="Celular" class="form__cellphone">
+        </div>
+        <div class="input-wrapper">
+          <input type="password" name="password" id="password" placeholder="Senha" class="form__password">
+        </div>
+        <div class="error hidden"></div>
+        <div class="success hidden"></div>
+        <div class="button-wrapper">
+          <button type="submit">Pegue Sua Amostra Grátis</button>
+        </div>
+        <p class="form__disclaimer">Ao clicar no botão, você concorda com nossos <a href="#">Termos e Serviços.</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
