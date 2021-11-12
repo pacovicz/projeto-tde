@@ -8,7 +8,7 @@ function cadastrar(event, form) {
   sucessoContainer.classList.add('hidden');
 
   const formData = new URLSearchParams(new FormData(form));
-  fetch('../php/criarUsuario.php', {
+  fetch('../projeto-tde/php/criarUsuario.php', {
     method: "POST",
     body: formData
   })

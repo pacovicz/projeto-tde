@@ -6,7 +6,7 @@ $email = $_POST["email"];
 $celular = $_POST["cellphone"];
 $senha = $_POST["password"];
 
-$conn = mysqli_connect("localhost:8080", "root", "root", "dbtde");
+$conn = mysqli_connect("localhost:3306", "root", "", "dbtde");
 
 if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);
